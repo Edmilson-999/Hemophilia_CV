@@ -1,0 +1,154 @@
+.about-hemophilia-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-hemophilia-page .hero-section {
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)), url('../../public/logo2.jpg') center/cover;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.about-hemophilia-page .hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-hemophilia-page .hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.about-hemophilia-page .content-section {
+  padding: 3rem 0;
+}
+
+.about-hemophilia-page .content-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-hemophilia-page .info-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}   
+
+.about-hemophilia-page .info-card h2 {
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ff6b6b;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.about-hemophilia-page .info-card .card-content p {
+  margin-bottom: 1rem;
+}
+
+.about-hemophilia-page .info-card .card-content .type-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.about-hemophilia-page .info-card .card-content .type-container .hemophilia-type {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #0066cc;
+}
+
+.about-hemophilia-page .info-card .card-content .type-container .hemophilia-type h3 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.about-hemophilia-page .info-card .card-content .type-container .hemophilia-type ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.about-hemophilia-page .info-card .card-content .type-container .hemophilia-type ul li {
+  margin-bottom: 0.5rem;
+}
+
+.about-hemophilia-page .info-card .card-content .treatment {
+  margin-bottom: 1.5rem;
+}
+
+.about-hemophilia-page .info-card .card-content .treatment h3 {
+  color: #0066cc;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.about-hemophilia-page .info-card .card-content .more-link {
+  display: inline-block;
+  color: #0066cc;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.about-hemophilia-page .info-card .card-content .more-link:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
+.about-hemophilia-page .support-section {
+  text-align: center;
+  padding: 2rem;
+  background: #f0f8ff;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.about-hemophilia-page .support-section h2 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.about-hemophilia-page .support-section p {
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-hemophilia-page .support-section .support-button {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.about-hemophilia-page .support-section .support-button:hover {
+  background: #ff6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-hemophilia-page .hero-section {
+    padding: 3rem 1rem;
+  }
+  .about-hemophilia-page .hero-section h1 {
+    font-size: 2rem;
+  }
+  .about-hemophilia-page .info-card {
+    padding: 1.5rem;
+  }
+}

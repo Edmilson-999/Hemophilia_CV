@@ -1,0 +1,77 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header .logo img {
+  height: 60px;
+}
+
+.header .nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.header .nav ul a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.header .nav ul a:hover::after {
+  width: 100%;
+}
+
+.header .nav ul a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.header .nav ul a.active {
+  color: #0066cc;
+}
+
+.header .nav ul a.active::after {
+  width: 100%;
+}
+
+.header .language-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header .language-switcher button {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.header .language-switcher button:hover {
+  background-color: #f5f5f5;
+}
+  

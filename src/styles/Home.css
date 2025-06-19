@@ -1,0 +1,146 @@
+.home-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.hero-banner .hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-banner .hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-banner .hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-banner .hero-content .cta-button {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-banner .hero-content .cta-button:hover {
+  background-color: #e05c5c; /* darken(#ff6b6b, 10%) */
+  transform: translateY(-2px);
+}
+
+/* Responsividade para Hero Banner */
+@media (max-width: 768px) {
+  .hero-banner .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-banner .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Sobre */
+.about-section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-section .container h2 {
+  font-size: 2rem;
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.about-section .container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #ff6b6b;
+}
+
+.about-section .container p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+.about-section .container .btn-primary {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-section .container .btn-primary:hover {
+  background-color: #005bb3; /* darken(#0066cc, 10%) */
+}
+
+/* Notícias */
+.news-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.news-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.news-section .container h2 {
+  margin-bottom: 2.5rem;
+}
+
+.news-section .news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .news-section .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
