@@ -1,0 +1,53 @@
+/* src/styles/TeamMember.css */
+
+.team-member {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+}
+
+.member-photo {
+  height: 200px;
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-photo img {
+  transform: scale(1.05);
+}
+
+.member-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.member-info h3 {
+  color: #0066cc;
+  margin-bottom: 0.5rem;
+}
+
+.member-info .position {
+  color: #ff6b6b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.member-info .bio {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,206 @@
+/* src/styles/AboutAssociation.css */
+
+.about-association-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.about-association-page .hero-section {
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)), 
+              url('/public/logo2.jpg') center/cover;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.about-association-page .hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-association-page .hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Mission/Vision/Values */
+.about-association-page .mission-section {
+  padding: 3rem 0;
+}
+
+.about-association-page .mission-section .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-association-page .mission-card,
+.about-association-page .vision-card,
+.about-association-page .values-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+.about-association-page .mission-card h2 {
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 0.5rem;
+}
+
+.about-association-page .vision-card h2 {
+  color: #ff6b6b;
+  border-bottom: 2px solid #ff6b6b;
+  padding-bottom: 0.5rem;
+}
+
+.about-association-page .values-card h2 {
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 0.5rem;
+}
+
+.about-association-page .values-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-association-page .values-card li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-association-page .values-card li::before {
+  content: "•";
+  color: #ff6b6b;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.3rem;
+}
+
+/* History Section */
+.about-association-page .history-section {
+  background: #f0f8ff;
+  padding: 3rem 0;
+}
+
+.about-association-page .history-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-association-page .history-section h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 2rem;
+}
+
+.about-association-page .timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.about-association-page .timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #0066cc;
+}
+
+.about-association-page .timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.about-association-page .timeline-item h3 {
+  color: #ff6b6b;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.about-association-page .timeline-item h3::before {
+  content: '';
+  position: absolute;
+  left: -2.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #0066cc;
+  border: 3px solid #ff6b6b;
+}
+
+/* Team Section */
+.about-association-page .team-section {
+  padding: 3rem 0;
+}
+
+.about-association-page .team-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-association-page .team-section h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 2rem;
+}
+
+.about-association-page .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-association-page .cta-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-association-page .cta-button {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.about-association-page .cta-button:hover {
+  background: #ff6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-association-page .hero-section {
+    padding: 3rem 1rem;
+  }
+  
+  .about-association-page .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .about-association-page .mission-section .container {
+    grid-template-columns: 1fr;
+  }
+}
