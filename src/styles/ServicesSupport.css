@@ -1,0 +1,175 @@
+/* src/styles/ServicesSupport.css */
+
+.services-support-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.services-support-page .hero-section {
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)), 
+              url('../../public/logo2.jpg') center/cover;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.services-support-page .hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-support-page .hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Services Section */
+.services-support-page .services-section {
+  padding: 3rem 0;
+  background: #f9f9f9;
+}
+
+.services-support-page .services-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.services-support-page .services-section h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 2rem;
+}
+
+.services-support-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Programs Section */
+.services-support-page .programs-section {
+  padding: 3rem 0;
+}
+
+.services-support-page .programs-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.services-support-page .programs-section h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 2rem;
+}
+
+.services-support-page .programs-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.services-support-page .program-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #ff6b6b;
+}
+
+.services-support-page .program-item h3 {
+  color: #0066cc;
+  margin-bottom: 0.5rem;
+}
+
+.services-support-page .program-link {
+  display: inline-block;
+  color: #0066cc;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.services-support-page .program-link:hover {
+  text-decoration: underline;
+  color: #ff6b6b;
+}
+
+/* Partners Section */
+.services-support-page .partners-section {
+  padding: 3rem 0;
+  background: #f0f8ff;
+}
+
+.services-support-page .partners-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.services-support-page .partners-section h2 {
+  text-align: center;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.services-support-page .partners-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+.services-support-page .partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.services-support-page .cta-partners {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.services-support-page .cta-partners p {
+  margin-bottom: 1rem;
+}
+
+.services-support-page .partner-button {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.services-support-page .partner-button:hover {
+  background: #ff6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .services-support-page .hero-section {
+    padding: 3rem 1rem;
+  }
+  
+  .services-support-page .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .services-support-page .services-grid,
+  .services-support-page .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}

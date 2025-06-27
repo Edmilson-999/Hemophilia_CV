@@ -1,0 +1,26 @@
+/* src/styles/PartnerLogo.css */
+
+.partner-logo {
+  text-align: center;
+  padding: 1rem;
+}
+
+.partner-logo img {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.partner-logo p {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}

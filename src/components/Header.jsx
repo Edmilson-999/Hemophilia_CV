@@ -13,7 +13,7 @@ export default function Header() {
           <ul>
             <li><NavLink to="/" end>Início</NavLink></li>
             <li><NavLink to="/sobre-hemofilia">Sobre a Hemofilia</NavLink></li>
-            <li><NavLink to="/associacao">Sobre a Associação</NavLink></li>
+            <li><NavLink to="/sobre-associacao">Sobre a Associação</NavLink></li>
             <li><NavLink to="/servicos">Serviços</NavLink></li>
             <li><NavLink to="/noticias">Notícias</NavLink></li>
             <li><NavLink to="/contato">Contato</NavLink></li>
@@ -27,4 +27,4 @@ export default function Header() {
       </div>
     </header>
   );
-}
+} 

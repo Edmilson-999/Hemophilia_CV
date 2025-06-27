@@ -10,7 +10,7 @@ const AboutAssociation = () => {
       id: 1,
       name: "Dr. Carlos Mendes",
       position: "Presidente",
-      photo: "./Img2 (2).png",
+      photo: "./img2 (1).png",
       bio: "Médico hematologista com 15 anos de experiência no tratamento de hemofilia."
     },
     {
@@ -123,4 +123,4 @@ const AboutAssociation = () => {
   );
 };
 
-export default AboutAssociation;
+export default AboutAssociation;  
