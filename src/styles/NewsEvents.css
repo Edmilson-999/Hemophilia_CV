@@ -1,0 +1,136 @@
+.news-events-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.news-events-page .hero-section {
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)), 
+              url('../../public/logo2.jpg') center/cover;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.news-events-page .hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.news-events-page .hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Main Content Layout */
+.news-events-page .main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.news-events-page .news-section h2,
+.news-events-page .events-section h2,
+.news-events-page .calendar-section h2 {
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ff6b6b;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* News Section */
+.news-events-page .news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-events-page .see-all {
+  display: inline-block;
+  color: #0066cc;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.news-events-page .see-all:hover {
+  color: #ff6b6b;
+  text-decoration: underline;
+}
+
+/* Sidebar */
+.news-events-page .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Calendar */
+.news-events-page .custom-calendar {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.news-events-page .custom-calendar .react-calendar__tile--active {
+  background: #0066cc;
+  color: white;
+}
+
+.news-events-page .custom-calendar .react-calendar__tile--now {
+  background: #ff6b6b;
+  color: white;
+}
+
+/* Events List */
+.news-events-page .events-list {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Campaigns Section */
+.news-events-page .campaigns-section {
+  background: #f0f8ff;
+  padding: 3rem 0;
+}
+
+.news-events-page .campaigns-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.news-events-page .campaigns-section h2 {
+  color: #0066cc;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.news-events-page .campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .news-events-page .main-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .news-events-page .hero-section {
+    padding: 3rem 1rem;
+  }
+  
+  .news-events-page .hero-section h1 {
+    font-size: 2rem;
+  }
+}

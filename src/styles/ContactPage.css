@@ -1,0 +1,144 @@
+/* src/styles/ContactPage.css */
+
+.contact-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.contact-page .hero-section {
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)), 
+              url('../../public/logo2.jpg') center/cover;
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.contact-page .hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-page .hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Contact Content */
+.contact-page .contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.contact-page .contact-info h2,
+.contact-page .form-section h2,
+.contact-page .map-section h2 {
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ff6b6b;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Contact Info */
+.contact-page .contact-method {
+  margin-bottom: 2rem;
+}
+
+.contact-page .contact-method h3 {
+  color: #0066cc;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.contact-page .contact-method p {
+  color: #555;
+}
+
+/* Social Section */
+.contact-page .social-section {
+  margin-top: 3rem;
+}
+
+.contact-page .social-section h3 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Form Section */
+.contact-page .form-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-page .success-message {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-page .success-message h3 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.contact-page .success-message p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.contact-page .btn-new-message {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-page .btn-new-message:hover {
+  background: #ff6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Section */
+.contact-page .map-section {
+  padding: 3rem 0;
+  background: #f0f8ff;
+}
+
+.contact-page .map-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-page .map-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-page .contact-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-page .hero-section {
+    padding: 3rem 1rem;
+  }
+  
+  .contact-page .hero-section h1 {
+    font-size: 2rem;
+  }
+}

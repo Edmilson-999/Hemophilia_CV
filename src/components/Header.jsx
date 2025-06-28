@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header">
       <div className="container">
         <Link to="/" className="logo">
-          <img src="Hemo.jpg" alt="Logo Associação de Hemofilia de Cabo Verde" />
+          <img src="logo1.png" alt="Logo Associação de Hemofilia de Cabo Verde" />
         </Link>
         
         <nav className="nav">
@@ -15,7 +15,8 @@ export default function Header() {
             <li><NavLink to="/sobre-hemofilia">Sobre a Hemofilia</NavLink></li>
             <li><NavLink to="/sobre-associacao">Sobre a Associação</NavLink></li>
             <li><NavLink to="/servicos">Serviços</NavLink></li>
-            <li><NavLink to="/noticias">Notícias</NavLink></li>
+            <li><NavLink to="/noticias-eventos">Notícias</NavLink></li>
+            <li><NavLink to="/como-ajudar">Como Ajudar</NavLink></li>
             <li><NavLink to="/contato">Contato</NavLink></li>
           </ul>
         </nav>  

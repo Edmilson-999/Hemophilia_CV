@@ -1,0 +1,73 @@
+.help-option-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.help-option-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.15);
+}
+
+.option-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #0066cc;
+}
+
+.help-option-card h3 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.option-description {
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.option-items {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  flex-grow: 1;
+}
+
+.option-items li {
+  margin-bottom: 0.5rem;
+  color: #666;
+  position: relative;
+}
+
+.option-items li::before {
+  content: "•";
+  color: #ff6b6b;
+  font-size: 1.5rem;
+  position: absolute;
+  left: -1.5rem;
+  top: -0.4rem;
+}
+
+.option-button {
+  display: inline-block;
+  background: #0066cc;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.option-button:hover {
+  background: #ff6b6b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,26 @@
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media a {
+  color: #0066cc;
+  background: rgba(0, 102, 204, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  color: white;
+  background: #0066cc;
+  transform: translateY(-3px);
+}
+
+.social-media svg {
+  font-size: 1.2rem;
+}
