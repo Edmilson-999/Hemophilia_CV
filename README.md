@@ -1,1 +1,0 @@
-Usar API para colocar noticias no site na pagina Noticias e eventos
